@@ -1,0 +1,2197 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YBM 25 - Test 2 - Part 7 (Tổng hợp 176-185)</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 30px;
+        background: #f5f5f5;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    h1.main-title {
+        text-align: center;
+        color: #333;
+        margin-bottom: 40px;
+    }
+    h2 {
+        color: #2c3e50;
+        border-bottom: 2px solid #2ecc71;
+        padding-bottom: 10px;
+        margin-top: 50px;
+    }
+    .section {
+        background: #fff;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    }
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 6px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 20px;
+        box-sizing: border-box; 
+    }
+    
+    /* Style mới cho hàng từ vựng để căn chỉnh label và input */
+    .row, .synonym-row {
+        display: flex;
+        align-items: center;
+        margin: 8px 0;
+    }
+    .row span, .synonym-row span {
+        min-width: 120px; /* Độ rộng cố định cho nhãn để thẳng hàng */
+        font-weight: bold;
+        color: #555;
+    }
+    .synonym-row span {
+        color: #2980b9; /* Màu xanh cho dấu bằng */
+        font-size: 24px; /* Dấu bằng to hơn chút */
+    }
+    input {
+        flex: 1; /* Input chiếm hết chỗ còn lại */
+        padding: 8px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 20px;
+    }
+
+    .buttons {
+        margin-top: 15px;
+    }
+    button {
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .btn-answer {
+        background: #2ecc71;
+        color: white;
+    }
+    .btn-done {
+        background: #e74c3c;
+        color: white;
+        margin-left: 8px;
+    }
+    /* Mặc định ẩn đáp án */
+    .answer-box {
+        display: none; 
+        margin-top: 15px;
+        padding: 15px;
+        background: #eef9f1;
+        border-left: 5px solid #2ecc71;
+    }
+    .correct {
+        border-color: #2ecc71 !important;
+        background-color: #e8f8f5;
+    }
+    .wrong {
+        border-color: #e74c3c !important;
+        background-color: #fdeaea;
+    }
+    .speaker {
+        cursor: pointer;
+        margin-left: 10px;
+        font-size: 24px;
+        vertical-align: middle;
+        text-decoration: none;
+    }
+    .speaker:hover {
+        opacity: 0.7;
+    }
+    .speak-word {
+        cursor: pointer;
+        color: #2980b9;
+        font-weight: bold;
+    }
+    .speak-word:hover {
+        text-decoration: underline;
+        color: #e74c3c;
+    }
+    
+    hr.big-divider {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        margin: 50px 0;
+    }
+</style>
+</head>
+
+<body>
+
+<h1 class="main-title">YBM 25 - Test 2 - Part 7 (Câu 176 - 185)</h1>
+
+<h2>176-180: Dịch đoạn văn </h2>
+
+<div class="section">
+    <p>
+        Wendell Green has been represented by Locke and Hanley Literary Agents since his debut. His first full-length work, Race Against Time, was included in the SLP 10, the Society of Library Professionals' yearly list of the best novels aimed at teenagers. He now writes in a variety of genres. Before becoming a full-time author, Mr. Green taught history to high school students. He lives in Armenta with his wife.<br>
+        <br>
+        <b>Recent Works by Wendell Green</b><br>
+        <br>
+        <b>In Wylie Cove</b><br>
+        Adventurous journalist Tony Bradley learns a startling secret while investigating strange occurrences in his small coastal town. Over two million copies sold!<br>
+        <br>
+        <b>Swing Away</b><br>
+        The players on the Spriggs Academy baseball team have very different personalities. Can they figure out how to work together before the season ends? Fraser's Quarterly called this "a must-read for young baseball fans."<br>
+        <br>
+        <b>Sarah Saves the World</b><br>
+        Middle-school student Sarah Fitch tries to keep her new superpowers a secret from her friends and family. A fun and touching graphic novel featuring illustrations by Eva Pineda.<br>
+        <br>
+        <b>Nails on a Chalkboard</b><br>
+        Teaching may be difficult, but it is never boring! This collection of essays about the profession touches on its humorous, frustrating, and heartbreaking aspects.<br>
+        <br>
+        <b>E-Mail</b><br>
+        To: Wendell Green<br>
+        From: Katherine Hanley<br>
+        Subject: Exciting news<br>
+        Date: March 2<br>
+        <br>
+        Hi Wendell,<br>
+        I got a call this week from a producer at Hickson Media about developing a film based on your latest book. Her name is Maura Dayton, and she seemed very enthusiastic about the project. She said that Tony Bradley is a great character and they could probably attract a top actor for the part.<br>
+        <br>
+        Ms. Dayton would like to meet with both of us to present her idea for the adaptation. Could you come in to our office for that sometime this month? Let me know.<br>
+        <br>
+        Best,<br>
+        Katherine Hanley, Literary Agent
+    </p>
+
+    <textarea id="aInput_176" rows="10" placeholder="Nhập bản dịch của bạn..."></textarea>
+
+    <div class="buttons">
+        <button class="btn-answer" onclick="showSpecific('aAnswer_176')">Đáp án</button>
+        <button class="btn-done" onclick="checkSpecific('aInput_176', 'aResult_176')">Hoàn thành</button>
+    </div>
+
+    <div class="answer-box" id="aAnswer_176">
+        <p><b>Dịch tham khảo:</b></p>
+        <p>
+        Wendell Green đã được đại diện bởi những người đại diện văn học Locke và Hanley từ khi ra mắt. Tác phẩm đầu tay của anh ấy, Race Against Time, đã được thêm vào SPL 10, danh sách hàng năm của hiệp hội những chuyên gia thư viện của những quyển sách hay nhất cho thanh thiếu niên. Bây giờ ông ấy viết đa dạng thể loại. Trước khi trở thành một tác giả toàn thời gian, ông Green đã dạy lịch sử cho học sinh trung học. Ông ấy sống ở Armenta với vợ.<br>
+        <br>
+        <b>Những tác phẩm gần đây được viết bởi Wendell Green</b><br>
+        <br>
+        <b>In Wylie Cove</b><br>
+        Một nhà báo thám hiểm Tony Bradley biết một bí mật trong khi điều tra những sự kiện kỳ lạ ở thị trấn nhỏ ven biển. Khoảng 2 triệu bản đã bán.<br>
+        <br>
+        <b>Swing Away</b><br>
+        Những người chơi về đội bóng chày Spriggs Academy có những tính cách khác nhau. Họ có thể tìm ra cách để làm việc cùng nhau trước khi mùa giải kết thúc không? Fraser's Quarterly đã gọi tác phẩm này là “phải đọc cho những người hâm mộ bóng chày trẻ”.<br>
+        <br>
+        <b>Sarah Saves the World</b><br>
+        Học sinh trung học cố gắng giữ cho siêu năng lực mới của cô ấy là một bí mật bạn và gia đình cô ấy. Một tiểu thuyết đồ họa vui và sống động gồm những hình ảnh minh họa bởi Eva Pineda.<br>
+        <br>
+        <b>Nails on a Chalkboard</b><br>
+        Dạy học có thể khó khăn nhưng không bao giờ buồn chán! Sự thu thập những bài luận này về nghề nghiệp đề cập đến những khía cạnh hài hước, đầy thất vọng và buồn.<br>
+        <br>
+        <b>E-Mail</b><br>
+        To: Wendell Green<br>
+        From: Katherine Hanley<br>
+        Subject: Exciting news<br>
+        Date: March 2<br>
+        <br>
+        Xin chào Wendell,<br>
+        Tôi đã nhận được cuộc gọi vào tuần này của nhà sản xuất của Hickson Media về phát triển một bộ phim dựa trên quyển sách mới nhất của bạn. Tên của cô ấy là Maura Dayton, và cô ấy dường như rất là đam mê về dự án này. Cô ấy nói rằng Tony Bradley là một nhân vật tuyệt vời và họ có thể thu hút một diễn viên hàng đầu cho vai diễn đó.<br>
+        <br>
+        Cô Dayton muốn gặp hai chúng ta để trình bày ý tưởng của cô ấy về việc chuyển thể. Bạn có thể đến văn phòng của chúng tôi một lúc nào đó trong tháng này không? Cho tôi biết với.<br>
+        <br>
+        Best,<br>
+        Katherine Hanley, Literary Agent
+        </p>
+    </div>
+
+    <p id="aResult_176"></p>
+</div>
+
+<hr>
+
+<div class="section">
+    <p><b>Represent (v)</b><span class="speaker" onclick="speak('Represent')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="đại diện"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* đại diện</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Work (n)</b><span class="speaker" onclick="speak('Work')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="tác phẩm"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="piece"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* tác phẩm</p>
+        <p>= <span class="speak-word" onclick="speak('piece')">piece 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Society (n)</b><span class="speaker" onclick="speak('Society')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="hiệp hội"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="Association,Alliance,coalition"></div>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="Association,Alliance,coalition"></div>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="Association,Alliance,coalition"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* hiệp hội</p>
+        <p>= <span class="speak-word" onclick="speak('Association')">Association 🔊</span> / 
+           <span class="speak-word" onclick="speak('Alliance')">Alliance 🔊</span> / 
+           <span class="speak-word" onclick="speak('coalition')">coalition 🔊</span>
+        </p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Professional</b><span class="speaker" onclick="speak('Professional')">🔊</span></p>
+    <div class="row"><span>* (n) Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="chuyên gia"></div>
+    <div class="row"><span>* (adj) Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="chuyên nghiệp"></div>
+    <hr>
+    <div class="synonym-row"><span>= (n)</span> <input type="text" class="b-input" data-type="synonym" data-answer="expert,specialist"></div>
+    <div class="synonym-row"><span>= (adj)</span> <input type="text" class="b-input" data-type="synonym" data-answer="expert"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* (n) chuyên gia</p>
+        <p>* (adj) chuyên nghiệp</p>
+        <p>= (n) <span class="speak-word" onclick="speak('expert')">expert 🔊</span> / <span class="speak-word" onclick="speak('specialist')">specialist 🔊</span></p>
+        <p>= (adj) <span class="speak-word" onclick="speak('expert')">expert 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Aim at sth (v)</b><span class="speaker" onclick="speak('Aim at')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="nhắm đến"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* nhắm đến</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>A variety of</b><span class="speaker" onclick="speak('A variety of')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="nhiều"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="An assortment of,an array of,a wide range of,a broad range of"></div>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="An assortment of,an array of,a wide range of,a broad range of"></div>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="An assortment of,an array of,a wide range of,a broad range of"></div>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="An assortment of,an array of,a wide range of,a broad range of"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* nhiều</p>
+        <p>= <span class="speak-word" onclick="speak('An assortment of')">An assortment of 🔊</span> / 
+           <span class="speak-word" onclick="speak('an array of')">an array of 🔊</span> / 
+           <span class="speak-word" onclick="speak('a wide range of')">a wide range of 🔊</span> /
+           <span class="speak-word" onclick="speak('a broad range of')">a broad range of 🔊</span>
+        </p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Genre (n)</b><span class="speaker" onclick="speak('Genre')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="thể loại"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* thể loại</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Adventure (n)</b><span class="speaker" onclick="speak('Adventure')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="cuộc phiêu lưu"></div>
+    <div class="row"><span>=> (adj)</span> <input type="text" class="b-input" data-type="meaning" data-answer="thích phiêu lưu" placeholder="Adventurous..."></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* cuộc phiêu lưu</p>
+        <p>=> Adventurous (adj): thích phiêu lưu</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Startle (v)</b><span class="speaker" onclick="speak('Startle')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="ngạc nhiên"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="surprise"></div>
+    <div class="synonym-row"><span>=> (adj)</span> <input type="text" class="b-input" data-type="synonym" data-answer="surprising" placeholder="Startling = ..."></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* ngạc nhiên</p>
+        <p>= <span class="speak-word" onclick="speak('surprise')">surprise 🔊</span></p>
+        <p>=> startling (adj) = <span class="speak-word" onclick="speak('surprising')">surprising 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Investigate (v)</b><span class="speaker" onclick="speak('Investigate')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="điều tra"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* điều tra</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Occurrences (n)</b><span class="speaker" onclick="speak('Occurrences')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="sự kiện"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="events"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* sự kiện</p>
+        <p>= <span class="speak-word" onclick="speak('events')">events 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Coastal (adj)</b><span class="speaker" onclick="speak('Coastal')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="bờ biển"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* bờ biển</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Personality (n)</b><span class="speaker" onclick="speak('Personality')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="tính cách"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="character"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* tính cách</p>
+        <p>= <span class="speak-word" onclick="speak('character')">character 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Figure out (v)</b><span class="speaker" onclick="speak('Figure out')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="tìm hiểu,tìm ra"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* tìm hiểu/ tìm ra</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Touching (adj)</b><span class="speaker" onclick="speak('Touching')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="cảm động"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* cảm động</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Feature (v)</b><span class="speaker" onclick="speak('Feature')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="bao gồm,có,về"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="include,boast"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* bao gồm/ có/ về</p>
+        <p>= <span class="speak-word" onclick="speak('include')">include 🔊</span> / <span class="speak-word" onclick="speak('boast')">boast 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Illustration (n)</b><span class="speaker" onclick="speak('Illustration')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="hình ảnh minh họa"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* hình ảnh minh họa</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Profession (n)</b><span class="speaker" onclick="speak('Profession')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="nghề nghiệp,công việc"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="career,job"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* nghề nghiệp/ công việc</p>
+        <p>= <span class="speak-word" onclick="speak('career')">career 🔊</span> / <span class="speak-word" onclick="speak('job')">job 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Touch on (v)</b><span class="speaker" onclick="speak('Touch on')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="đề cập"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="refer to,mention"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* đề cập</p>
+        <p>= <span class="speak-word" onclick="speak('refer to')">refer to 🔊</span> / <span class="speak-word" onclick="speak('mention')">mention 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Humorous (adj)</b><span class="speaker" onclick="speak('Humorous')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="hài hước"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="comical"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* hài hước</p>
+        <p>= <span class="speak-word" onclick="speak('comical')">comical 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Frustrating (adj)</b><span class="speaker" onclick="speak('Frustrating')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="thất vọng"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="disappointing"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* thất vọng</p>
+        <p>= <span class="speak-word" onclick="speak('disappointing')">disappointing 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Heartbreaking (adj)</b><span class="speaker" onclick="speak('Heartbreaking')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="buồn,đau lòng"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="sad"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* buồn/ đau lòng</p>
+        <p>= <span class="speak-word" onclick="speak('sad')">sad 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Enthusiastic about (adj)</b><span class="speaker" onclick="speak('Enthusiastic about')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="nhiệt tình,đam mê"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="passionate about"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* nhiệt tình/ đam mê</p>
+        <p>= <span class="speak-word" onclick="speak('passionate about')">passionate about 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Based on (v)</b><span class="speaker" onclick="speak('Based on')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="dựa trên"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* dựa trên</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Present (v)</b><span class="speaker" onclick="speak('Present')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="trình bày,thuyết trình"></div>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="xuất trình"></div>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="gây ra,dẫn đến"></div>
+    <hr>
+    <div class="synonym-row"><span>= (gây ra)</span> <input type="text" class="b-input" data-type="synonym" data-answer="lead to,result in,pose"></div>
+    <div class="synonym-row"><span>= (gây ra)</span> <input type="text" class="b-input" data-type="synonym" data-answer="lead to,result in,pose"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* trình bày/ thuyết trình</p>
+        <p>* xuất trình</p>
+        <p>* gây ra/ dẫn đến (= <span class="speak-word" onclick="speak('lead to')">lead to 🔊</span> / <span class="speak-word" onclick="speak('result in')">result in 🔊</span> / <span class="speak-word" onclick="speak('pose')">pose 🔊</span>)</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Adaptation (n)</b><span class="speaker" onclick="speak('Adaptation')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="sự thay thế,sự chuyển thể"></div>
+    <div class="row"><span>=> Adapt (v)</span> <input type="text" class="b-input" data-type="meaning" data-answer="thay đổi,chuyển thể"></div>
+    <hr>
+    <div class="synonym-row"><span>= (Adapt)</span> <input type="text" class="b-input" data-type="synonym" data-answer="adjust,modify,revise,change"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* sự thay thế/ sự chuyển thể</p>
+        <p>=> Adapt (v): thay đổi / chuyển thể</p>
+        <p>= <span class="speak-word" onclick="speak('adjust')">adjust 🔊</span> / 
+           <span class="speak-word" onclick="speak('modify')">modify 🔊</span> / 
+           <span class="speak-word" onclick="speak('revise')">revise 🔊</span> / 
+           <span class="speak-word" onclick="speak('change')">change 🔊</span></p>
+    </div>
+</div>
+
+<h2>Dịch câu hỏi (176-180)</h2>
+<div class="section">
+    <p>
+        176. What is the SLP 10 a list of?<br>
+        (A) Fictional characters<br>
+        (B) First-time authors<br>
+        (C) Books for youth<br>
+        (D) Public libraries<br>
+        <br>
+        177. What is indicated about Mr. Green?<br>
+        (A) He lives near the ocean.<br>
+        (B) He collaborates with a family member.<br>
+        (C) He has written about his previous career.<br>
+        (D) He sometimes contributes to Fraser's Quarterly.<br>
+        <br>
+        178. In the e-mail, the word "part" in paragraph 1, line 4, is closest in meaning to<br>
+        (A) component<br>
+        (B) section<br>
+        (C) portion<br>
+        (D) role<br>
+        <br>
+        179. According to the e-mail, which book may be adapted into a film?<br>
+        (A) In Wylie Cove<br>
+        (B) Swing Away<br>
+        (C) Sarah Saves the World<br>
+        (D) Nails on a Chalkboard<br>
+        <br>
+        180. What does Ms. Hanley ask Mr. Green to do in March?<br>
+        (A) Meet with a lawyer<br>
+        (B) Listen to a proposal<br>
+        (C) Make an announcement<br>
+        (D) Edit some writing
+    </p>
+
+    <textarea id="bInput_176" rows="10" placeholder="Nhập bản dịch của bạn..."></textarea>
+
+    <div class="buttons">
+        <button class="btn-answer" onclick="showSpecific('bAnswer_176')">Đáp án</button>
+        <button class="btn-done" onclick="checkSpecific('bInput_176', 'bResult_176')">Hoàn thành</button>
+    </div>
+
+    <div class="answer-box" id="bAnswer_176">
+        <p><b>Dịch tham khảo:</b></p>
+        <p>
+        176. SLP10 là danh sách của cái gì?<br>
+        A: những nhân vật hư cấu<br>
+        B: những tác giả mới ra mắt lần đầu<br>
+        C: những quyển sách cho giới trẻ<br>
+        D: những thư viện công cộng<br>
+        <br>
+        177. Cái gì được chỉ ra về ông Green?<br>
+        A: ông ấy sống gần biển<br>
+        B: ông ấy cộng tác với một thành viên trong gia đình<br>
+        C: ông ấy đã viết về công việc trước đây<br>
+        D: ông ấy thỉnh thoảng đóng góp cho tờ báo Fraser's Quarterly<br>
+        <br>
+        178. Từ “part” có nghĩa gì?<br>
+        A: phụ tùng/ bộ phận<br>
+        B: phần<br>
+        C: phần<br>
+        D: vai trò/ vai diễn<br>
+        <br>
+        179. Theo email quyển sách nào có thể chuyển thể thành bộ phim?<br>
+        A: In Wylie Cove<br>
+        B: Swing Away<br>
+        C: Sarah Saves the World<br>
+        D: Nails on a Chalkboard<br>
+        <br>
+        180. Cô Hanley yêu cầu ông Green làm gì vào tháng ba?<br>
+        A: gặp luật sư<br>
+        B: nghe một đề xuất<br>
+        C: làm một thông báo<br>
+        D: sửa chữa vài bài viết
+        </p>
+    </div>
+
+    <p id="bResult_176"></p>
+</div>
+
+<hr>
+
+<div class="section">
+    <p><b>Fictional (adj)</b><span class="speaker" onclick="speak('Fictional')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="hư cấu"></div>
+    <div class="row"><span>=> Fiction (n)</span> <input type="text" class="b-input" data-type="meaning" data-answer="tiểu thuyết"></div>
+    <hr>
+    <div class="synonym-row"><span>= (n)</span> <input type="text" class="b-input" data-type="synonym" data-answer="novel"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* hư cấu</p>
+        <p>=> Fiction (n): tiểu thuyết (= <span class="speak-word" onclick="speak('novel')">novel 🔊</span>)</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Character (n)</b><span class="speaker" onclick="speak('Character')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="tính cách,nhân vật"></div>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="tính cách,nhân vật"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="personality"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* tính cách (= <span class="speak-word" onclick="speak('personality')">personality 🔊</span>)</p>
+        <p>* nhân vật</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Author (n)</b><span class="speaker" onclick="speak('Author')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="tác giả"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="novelist,writer"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* tác giả</p>
+        <p>= <span class="speak-word" onclick="speak('novelist')">novelist 🔊</span> / <span class="speak-word" onclick="speak('writer')">writer 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Collaborate with (v)</b><span class="speaker" onclick="speak('Collaborate with')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="hợp tác"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="cooperate with,partner with"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* hợp tác</p>
+        <p>= <span class="speak-word" onclick="speak('cooperate with')">cooperate with 🔊</span> / <span class="speak-word" onclick="speak('partner with')">partner with 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Previous (adj)</b><span class="speaker" onclick="speak('Previous')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="trước đây"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="former"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* trước đây</p>
+        <p>= <span class="speak-word" onclick="speak('former')">former 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Contribute to (v)</b><span class="speaker" onclick="speak('Contribute to')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="đóng góp"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* đóng góp</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Lawyer (n)</b><span class="speaker" onclick="speak('Lawyer')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="luật sư"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="attorney"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* luật sư</p>
+        <p>= <span class="speak-word" onclick="speak('attorney')">attorney 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Proposal (n)</b><span class="speaker" onclick="speak('Proposal')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="đề xuất"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="suggestion,recommendation"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* đề xuất</p>
+        <p>= <span class="speak-word" onclick="speak('suggestion')">suggestion 🔊</span> / <span class="speak-word" onclick="speak('recommendation')">recommendation 🔊</span></p>
+    </div>
+</div>
+
+<hr class="big-divider">
+
+<h2>181-185: Dịch đoạn văn</h2>
+
+<div class="section">
+    <p>
+        <b>E-Mail</b><br>
+        To: Member list<br>
+        From: Otis Community Center<br>
+        Date: February 3<br>
+        Subject: Cooking classes<br>
+        Attachment: Flyer<br>
+        <br>
+        As part of our ongoing efforts to celebrate cultural diversity, Otis Community Center will hold a series of one-time cooking classes on Asian dishes this spring. The classes will be held on the first Wednesday evening of each month from March through June. In order, the dishes covered will be Vietnamese chicken curry, Korean kimchi stew, Thai spring rolls, and Cantonese stir-fry beef.<br>
+        <br>
+        Guest instructors from Roark Culinary Academy will teach the classes in our dedicated cooking classroom. Advance registration and payment are required, and participants will be asked to show proof of registration to their instructor. Registration can be completed at our front desk from February 15 for all classes. Those who are not members of Otis Community Center will be required to pay a $5 registration fee.<br>
+        <br>
+        Please see the attached flyer for details including materials fees, which vary by class. Questions about the classes may be directed to Heather Tate, our programming specialist.<br>
+        <br>
+        Akio Hayashi, Director<br>
+        <br>
+        <b>OTIS COMMUNITY CENTER</b><br>
+        <b>CLASS REGISTRATION CONFIRMATION FORM</b><br>
+        Name: Kayla Shull<br>
+        Membership Number: 499560<br>
+        Class Title: Thai Spring Rolls<br>
+        Instructor: David Somsri<br>
+        Date & Time: May 6, 5 P.M.<br>
+        Registration Fee: WAIVED<br>
+        Materials Fee: $15 (Paid)<br>
+        Processed by: Eric Woodard<br>
+        <br>
+        Note:<br>
+        Refunds of class fees are only issued for cancellations made at least one week before the class date. To cancel your registration, please visit the center or call our front desk at 555-0195.
+    </p>
+
+    <textarea id="aInput_181" rows="10" placeholder="Nhập bản dịch của bạn..."></textarea>
+
+    <div class="buttons">
+        <button class="btn-answer" onclick="showSpecific('aAnswer_181')">Đáp án</button>
+        <button class="btn-done" onclick="checkSpecific('aInput_181', 'aResult_181')">Hoàn thành</button>
+    </div>
+
+    <div class="answer-box" id="aAnswer_181">
+        <p><b>Dịch tham khảo:</b></p>
+        <p>
+        <b>E-Mail</b><br>
+        To: Member list<br>
+        From: Otis Community Center<br>
+        Date: February 3<br>
+        Subject: Cooking classes<br>
+        Attachment: Flyer<br>
+        <br>
+        Như là một phần của nỗ lực liên tục của chúng tôi để tôn vinh sự đa dạng văn hóa, trung tâm cộng đồng Otis sẽ tổ chức một chuỗi các lớp học nấu ăn một lần về những món ăn Châu Á vào mùa xuân tới. Những lớp học sẽ được tổ chức vào tối thứ tư đầu tiên của mỗi tháng từ tháng ba đến tháng sáu. Theo thứ tự, các món ăn được bao gồm sẽ là cà ri gà Việt Nam, kim chi Hàn Quốc, chả giò Thái, bò xào Quảng Đông.<br>
+        <br>
+        Những giáo viên khách mời từ học viện ẩm thực Roark sẽ dạy các lớp học trong những phòng học nấu ăn chuyên dụng của chúng tôi. Đăng ký và thanh toán trước là yêu cầu bắt buộc, và những người tham gia sẽ được yêu cầu xuất trình bằng chứng đăng ký của họ cho người hướng dẫn. Việc đăng ký có thể hoàn tất ở quầy lễ tân từ 15 tháng 2 cho tất cả các lớp. Những người mà không phải là thành viên của trung tâm cộng đồng Otis sẽ được yêu cầu thanh toán 5 đô phí đăng ký.<br>
+        <br>
+        Vui lòng xem tờ rơi đính kèm cho chi tiết bao gồm phí nguyên liệu, cái mà khác nhau bởi các lớp. Câu hỏi về các lớp có thể được gửi trực tiếp đến Heather Tate, chuyên gia chương trình của chúng tôi.<br>
+        <br>
+        Akio Hayashi, Giám đốc<br>
+        <br>
+        <b>OTIS COMMUNITY CENTER</b><br>
+        <b>CLASS REGISTRATION CONFIRMATION FORM</b><br>
+        Name: Kayla Shull<br>
+        Membership Number: 499560<br>
+        Class Title: Thai Spring Rolls<br>
+        Instructor: David Somsri<br>
+        Date & Time: May 6, 5 P.M.<br>
+        Registration Fee: WAIVED<br>
+        Materials Fee: $15 (Paid)<br>
+        Processed by: Eric Woodard<br>
+        <br>
+        Note:<br>
+        Việc hoàn lại học phí của lớp chỉ được phát hành dành cho việc hủy lớp ít nhất một tuần trước ngày học. Để hủy việc đăng ký của bạn, vui lòng ghé trung tâm hoặc gọi cho quầy lễ tân ở số 555-0195.
+        </p>
+    </div>
+
+    <p id="aResult_181"></p>
+</div>
+
+<hr>
+
+<div class="section">
+    <p><b>Ongoing (adj)</b><span class="speaker" onclick="speak('Ongoing')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="liên tục"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="continuous,constant"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* liên tục</p>
+        <p>= <span class="speak-word" onclick="speak('continuous')">continuous 🔊</span> / <span class="speak-word" onclick="speak('constant')">constant 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Effort (n)</b><span class="speaker" onclick="speak('Effort')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="nỗ lực"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="attempt,endeavor"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* nỗ lực</p>
+        <p>= <span class="speak-word" onclick="speak('attempt')">attempt 🔊</span> / <span class="speak-word" onclick="speak('endeavor')">endeavor 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Diversity (n)</b><span class="speaker" onclick="speak('Diversity')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="đa dạng"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="variety,assortment,range"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* đa dạng</p>
+        <p>= <span class="speak-word" onclick="speak('variety')">variety 🔊</span> / <span class="speak-word" onclick="speak('assortment')">assortment 🔊</span> / <span class="speak-word" onclick="speak('range')">range 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Order (n)</b><span class="speaker" onclick="speak('Order')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="đơn hàng"></div>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="sự ra lệnh,mệnh lệnh"></div>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="thứ tự"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* đơn hàng</p>
+        <p>* sự ra lệnh/ mệnh lệnh</p>
+        <p>* thứ tự</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Cover (v)</b><span class="speaker" onclick="speak('Cover')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="bao phủ"></div>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="bao gồm"></div>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="chi trả"></div>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="đưa tin"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* bao phủ</p>
+        <p>* bao gồm</p>
+        <p>* chi trả</p>
+        <p>* đưa tin (báo)</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Stir-fry (n)</b><span class="speaker" onclick="speak('Stir-fry')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="xào,món xào"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* xào</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Instructor (n)</b><span class="speaker" onclick="speak('Instructor')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="giáo viên,người hướng dẫn"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* giáo viên/ người hướng dẫn</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Dedicated (adj)</b><span class="speaker" onclick="speak('Dedicated')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="tận tụy,cam kết"></div>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="chuyên dụng"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* tận tụy/ cam kết</p>
+        <p>* chuyên dụng</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Advance</b><span class="speaker" onclick="speak('Advance')">🔊</span></p>
+    <div class="row"><span>* (adj) Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="trước"></div>
+    <hr>
+    <div class="synonym-row"><span>= (adj)</span> <input type="text" class="b-input" data-type="synonym" data-answer="prior,former,previous"></div>
+    <div class="row"><span>=> (v/n)</span> <input type="text" class="b-input" data-type="meaning" data-answer="tiến bộ" placeholder="Advance (v/n)..."></div>
+    <div class="synonym-row"><span>= (v/n)</span> <input type="text" class="b-input" data-type="synonym" data-answer="progress"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* (adj) trước (= <span class="speak-word" onclick="speak('prior')">prior 🔊</span> / <span class="speak-word" onclick="speak('former')">former 🔊</span> / <span class="speak-word" onclick="speak('previous')">previous 🔊</span>)</p>
+        <p>=> Advance (v/n): tiến bộ (= <span class="speak-word" onclick="speak('progress')">progress 🔊</span>)</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Proof (n)</b><span class="speaker" onclick="speak('Proof')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="bằng chứng"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="evidence"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* bằng chứng</p>
+        <p>= <span class="speak-word" onclick="speak('evidence')">evidence 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Attach (v)</b><span class="speaker" onclick="speak('Attach')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="đính kèm"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="enclose"></div>
+    <div class="row"><span>=> Flyer (n)</span> <input type="text" class="b-input" data-type="meaning" data-answer="tờ rơi"></div>
+    <div class="synonym-row"><span>= (n)</span> <input type="text" class="b-input" data-type="synonym" data-answer="pamphlet"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* đính kèm (= <span class="speak-word" onclick="speak('enclose')">enclose 🔊</span>)</p>
+        <p>=> Flyer (n): tờ rơi (= <span class="speak-word" onclick="speak('pamphlet')">pamphlet 🔊</span>)</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Vary (v)</b><span class="speaker" onclick="speak('Vary')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="khác nhau"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="differ"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* khác nhau</p>
+        <p>= <span class="speak-word" onclick="speak('differ')">differ 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Direct (v)</b><span class="speaker" onclick="speak('Direct')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="hướng dẫn"></div>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="guide,instruct"></div>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="lãnh đạo"></div>
+    <div class="row"><span>=> Director</span> <input type="text" class="b-input" data-type="meaning" data-answer="giám đốc" placeholder="Director (n)..."></div>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="gửi"></div>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="send"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* hướng dẫn (= <span class="speak-word" onclick="speak('guide')">guide 🔊</span> / <span class="speak-word" onclick="speak('instruct')">instruct 🔊</span>)</p>
+        <p>* lãnh đạo => Director (n): giám đốc</p>
+        <p>* gửi (= <span class="speak-word" onclick="speak('send')">send 🔊</span>)</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Specialist (n)</b><span class="speaker" onclick="speak('Specialist')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="chuyên gia"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="expert,professional"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* chuyên gia</p>
+        <p>= <span class="speak-word" onclick="speak('expert')">expert 🔊</span> / <span class="speak-word" onclick="speak('professional')">professional 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Process (v)</b><span class="speaker" onclick="speak('Process')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="xử lý"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="handle,address,deal with"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* xử lý</p>
+        <p>= <span class="speak-word" onclick="speak('handle')">handle 🔊</span> / <span class="speak-word" onclick="speak('address')">address 🔊</span> / <span class="speak-word" onclick="speak('deal with')">deal with 🔊</span></p>
+    </div>
+</div>
+
+<h2>Dịch câu hỏi (181-185)</h2>
+<div class="section">
+    <p>
+        181. Why was the e-mail written?<br>
+        (A) To recruit volunteer workers<br>
+        (B) To issue invitations to special dinners<br>
+        (C) To ask for feedback about a program<br>
+        (D) To publicize some learning opportunities<br>
+        <br>
+        182. Where will a community activity take place?<br>
+        (A) On a city street<br>
+        (B) At Otis Community Center<br>
+        (C) At several local restaurants<br>
+        (D) At Roark Culinary Academy<br>
+        <br>
+        183. What dish will be cooked in March?<br>
+        (A) Vietnamese chicken curry<br>
+        (B) Korean kimchi stew<br>
+        (C) Thai spring rolls<br>
+        (D) Cantonese stir-fry beef<br>
+        <br>
+        184. Why was a fee waived for Ms. Shull?<br>
+        (A) She will provide some materials herself.<br>
+        (B) She is a community center member.<br>
+        (C) She registered before a certain date.<br>
+        (D) She attended each session of a class.<br>
+        <br>
+        185. To whom should Ms. Shull show her confirmation form?<br>
+        (A) Ms. Tate<br>
+        (B) Mr. Hayashi<br>
+        (C) Mr. Somsri<br>
+        (D) Mr. Woodard
+    </p>
+
+    <textarea id="bInput_181" rows="10" placeholder="Nhập bản dịch của bạn..."></textarea>
+
+    <div class="buttons">
+        <button class="btn-answer" onclick="showSpecific('bAnswer_181')">Đáp án</button>
+        <button class="btn-done" onclick="checkSpecific('bInput_181', 'bResult_181')">Hoàn thành</button>
+    </div>
+
+    <div class="answer-box" id="bAnswer_181">
+        <p><b>Dịch tham khảo:</b></p>
+        <p>
+        181. Tại sao email được viết?<br>
+        A: để tuyển nhân viên tình nguyện<br>
+        B: để mời đến dự buổi tiệc tối đặc biệt<br>
+        C: để yêu cầu phản hồi về một chương trình<br>
+        D: để quảng bá một vài cơ hội học tập<br>
+        <br>
+        182. Hoạt động cộng đồng được tổ chức ở đâu?<br>
+        A: trên một con đường thành phố<br>
+        B: trung tâm cộng đồng Otis<br>
+        C: một nhà hàng địa phương<br>
+        D: học viện ẩm thực Roark<br>
+        <br>
+        183. Món ăn nào sẽ được nấu vào tháng ba?<br>
+        A: Cà ri gà Việt Nam<br>
+        B: Kim chi Hàn Quốc<br>
+        C: Chả giò Thái Lan<br>
+        D: Bò xào Quảng Đông<br>
+        <br>
+        184. Tại sao một cái phí được miễn cho cô Shull?<br>
+        A: Cô ấy sẽ tự chuẩn bị một vài nguyên liệu<br>
+        B: Cô ấy là thành viên trung tâm cộng đồng<br>
+        C: Cô ấy đã đăng ký trước một ngày nhất định<br>
+        D: Cô ấy đã tham gia mỗi buổi của một lớp học<br>
+        <br>
+        185. Cô Shull xuất trình đơn xác nhận cho người nào?<br>
+        A: Ms. Tate<br>
+        B: Mr. Hayashi<br>
+        C: Mr. Somsri<br>
+        D: Mr. Woodard
+        </p>
+    </div>
+
+    <p id="bResult_181"></p>
+</div>
+
+<hr>
+
+<div class="section">
+    <p><b>Publicize (v)</b><span class="speaker" onclick="speak('Publicize')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="quảng cáo,quảng bá"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="advertise,promote"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* quảng cáo/ quảng bá</p>
+        <p>= <span class="speak-word" onclick="speak('advertise')">advertise 🔊</span> / <span class="speak-word" onclick="speak('promote')">promote 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Culinary (adj)</b><span class="speaker" onclick="speak('Culinary')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="ẩm thực"></div>
+    <hr>
+    <div class="synonym-row"><span>= (n)</span> <input type="text" class="b-input" data-type="synonym" data-answer="cuisine"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* ẩm thực</p>
+        <p>= <span class="speak-word" onclick="speak('cuisine')">cuisine 🔊</span> (n)</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Academy (n)</b><span class="speaker" onclick="speak('Academy')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="học viện"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="institute"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* học viện</p>
+        <p>= <span class="speak-word" onclick="speak('institute')">institute 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Waived (v)</b><span class="speaker" onclick="speak('Waived')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="miễn,miễn phí"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* miễn (phí)</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Register (v)</b><span class="speaker" onclick="speak('Register')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="đăng ký"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="sign up,rolling"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* đăng ký</p>
+        <p>= <span class="speak-word" onclick="speak('sign up')">sign up 🔊</span> / <span class="speak-word" onclick="speak('rolling')">rolling 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Certain (adj)</b><span class="speaker" onclick="speak('Certain')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="chắc chắn"></div>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="nhất định"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* chắc chắn</p>
+        <p>* nhất định</p>
+    </div>
+</div>
+
+<h2>186-190: E-mail & Schedule</h2>
+
+<div class="section">
+    <p>
+        <b>[E-Mail Message 1]</b><br>
+        To: Ingram Group staff<br>
+        From: James Buckley<br>
+        Subject: Upcoming software training<br>
+        Date: May 14<br>
+        Attachment: Training Schedule<br>
+        <br>
+        Hello everyone,<br>
+        In the next few weeks, we will have training sessions for two software programs that are important to our business.<br>
+        <br>
+        First, all employees must attend a 90-minute training on Skeddit, the scheduling software we will switch over to in June. The training session will be held multiple times before the transition to the new system.<br>
+        <br>
+        Second, a two-hour online training session on Calacad will be required only for engineering department staff. The developer created the training to publicize new functions that have been added to the software, and it will benefit all members of the department to learn about them.<br>
+        <br>
+        The full schedule for the trainings is attached to this e-mail. Registration can be completed on the "Training" page of the employee Web site. The Web link for the online training will be sent to participants upon registration.<br>
+        <br>
+        Sincerely,<br>
+        James Buckley, Ingram Group<br>
+        <br>
+        <b>[E-Mail Message 2]</b><br>
+        To: James Buckley<br>
+        From: Lisa Chang<br>
+        Subject: Re: Upcoming software training<br>
+        Date: May 15<br>
+        <br>
+        Hi James,<br>
+        I'll need to take both of those trainings, but I have a meeting on the morning of May 26. It's with important external partners and I can't move it. Then I'll be out of the country on vacation from May 29 through June 9. In this situation, what do you recommend I do about the Calacad training?<br>
+        <br>
+        Thanks,<br>
+        Lisa
+    </p>
+
+    <textarea id="aInput_186" rows="10" placeholder="Nhập bản dịch của bạn..."></textarea>
+
+    <div class="buttons">
+        <button class="btn-answer" onclick="showSpecific('aAnswer_186')">Đáp án</button>
+        <button class="btn-done" onclick="checkSpecific('aInput_186', 'aResult_186')">Hoàn thành</button>
+    </div>
+
+    <div class="answer-box" id="aAnswer_186">
+        <p><b>Dịch tham khảo:</b></p>
+        <p>
+        <b>[E-Mail 1]</b><br>
+        Xin chào mọi người,<br>
+        Trong một vài tuần tới, chúng tôi sẽ có những buổi đào tạo cho hai chương trình phần mềm quan trọng với doanh nghiệp.<br>
+        Đầu tiên, tất cả nhân viên phải tham gia đào tạo 90 phút về Skeddit, một phần mềm lên lịch chúng tôi sẽ chuyển sang vào tháng Sáu. Buổi đào tạo sẽ được tổ chức nhiều lần trước khi chuyển sang hệ thống mới.<br>
+        Thứ hai, một buổi đào tạo trực tuyến hai tiếng về Calacad sẽ chỉ yêu cầu với nhân viên phòng kỹ thuật. Nhà phát triển đã tạo ra buổi đào tạo để quảng bá những tính năng mới đã được thêm vào phần mềm, và nó sẽ có ích với tất cả thành viên của phòng để tìm hiểu về chúng.<br>
+        Lịch trình đầy đủ cho những buổi đào tạo đã được đính kèm trong email. Việc đăng ký có thể được hoàn thành trên trang "Training" của trang web nhân viên. Đường link Web cho buổi đào tạo trực tuyến sẽ được gửi cho người tham gia ngay khi đăng ký.<br>
+        <br>
+        <b>[E-Mail 2]</b><br>
+        Chào James,<br>
+        Tôi cần phải tham gia cả hai buổi đào tạo đó nhưng tôi có một cuộc họp vào sáng ngày 26 tháng 5. Nó là cuộc họp với những đối tác bên ngoài quan trọng và tôi không thể dời lịch. Sau đó tôi sẽ ra nước ngoài vào kỳ nghỉ từ 29 tháng 5 đến tận 9 tháng 6. Trong tình huống này, bạn đề xuất tôi làm gì về buổi đào tạo Calacad?<br>
+        Cảm ơn,<br>
+        Lisa
+        </p>
+    </div>
+    <p id="aResult_186"></p>
+</div>
+
+<div class="vocab-header">Từ vựng đoạn 186-190</div>
+
+<div class="section">
+    <p><b>Session (n)</b><span class="speaker" onclick="speak('Session')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="buổi,phiên"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* buổi / phiên</p></div>
+</div>
+
+<div class="section">
+    <p><b>Switch (v/n)</b><span class="speaker" onclick="speak('Switch')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="chuyển"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="transition,shift"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* chuyển</p>
+        <p>= <span class="speak-word" onclick="speak('transition')">transition 🔊</span> / <span class="speak-word" onclick="speak('shift')">shift 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Multiple (adj)</b><span class="speaker" onclick="speak('Multiple')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="nhiều"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="ample,numerous,plentiful"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* nhiều</p>
+        <p>= <span class="speak-word" onclick="speak('ample')">ample 🔊</span> / <span class="speak-word" onclick="speak('numerous')">numerous 🔊</span> / <span class="speak-word" onclick="speak('plentiful')">plentiful 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Require (v)</b><span class="speaker" onclick="speak('Require')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="yêu cầu,cần"></div>
+    <div class="row"><span>=> Required (adj)</span> <input type="text" class="b-input" data-type="meaning" data-answer="bắt buộc"></div>
+    <hr>
+    <div class="synonym-row"><span>= (adj)</span> <input type="text" class="b-input" data-type="synonym" data-answer="compulsory,mandatory,obligatory"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* yêu cầu / cần</p>
+        <p>=> required (adj): bắt buộc</p>
+        <p>= <span class="speak-word" onclick="speak('compulsory')">compulsory 🔊</span> / <span class="speak-word" onclick="speak('mandatory')">mandatory 🔊</span> / <span class="speak-word" onclick="speak('obligatory')">obligatory 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Publicize (v)</b><span class="speaker" onclick="speak('Publicize')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="quảng cáo,quảng bá"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="promote,advertise"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* quảng cáo / quảng bá</p>
+        <p>= <span class="speak-word" onclick="speak('promote')">promote 🔊</span> / <span class="speak-word" onclick="speak('advertise')">advertise 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Function (n)</b><span class="speaker" onclick="speak('Function')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="chức năng"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="feature"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* chức năng</p>
+        <p>= <span class="speak-word" onclick="speak('feature')">feature 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>External (adj)</b><span class="speaker" onclick="speak('External')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="bên ngoài"></div>
+    <hr>
+    <div class="synonym-row"><span># Trái nghĩa</span> <input type="text" class="b-input" data-type="synonym" data-answer="internal"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* bên ngoài</p>
+        <p># <span class="speak-word" onclick="speak('internal')">internal 🔊</span> (bên trong)</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Registration (n)</b><span class="speaker" onclick="speak('Registration')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="sự đăng ký"></div>
+    <div class="row"><span>=> Register (v)</span> <input type="text" class="b-input" data-type="meaning" data-answer="đăng ký"></div>
+    <hr>
+    <div class="synonym-row"><span>= (v)</span> <input type="text" class="b-input" data-type="synonym" data-answer="sign up,enroll"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* sự đăng ký</p>
+        <p>=> Register (v): đăng ký</p>
+        <p>= <span class="speak-word" onclick="speak('sign up')">sign up 🔊</span> / <span class="speak-word" onclick="speak('enroll')">enroll 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Acquire (v)</b><span class="speaker" onclick="speak('Acquire')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="đạt được,mua"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="attain,achieve,accomplish,secure,obtain"></div>
+    <div class="synonym-row"><span>= (mua)</span> <input type="text" class="b-input" data-type="synonym" data-answer="buy,purchase"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* đạt được / mua</p>
+        <p>= <span class="speak-word" onclick="speak('attain')">attain 🔊</span> / <span class="speak-word" onclick="speak('achieve')">achieve 🔊</span> / <span class="speak-word" onclick="speak('secure')">secure 🔊</span></p>
+        <p>= <span class="speak-word" onclick="speak('buy')">buy 🔊</span> / <span class="speak-word" onclick="speak('purchase')">purchase 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Specifically (adv)</b><span class="speaker" onclick="speak('Specifically')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="cụ thể"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="particularly"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* cụ thể</p>
+        <p>= <span class="speak-word" onclick="speak('particularly')">particularly 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Regular (adj)</b><span class="speaker" onclick="speak('Regular')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="thường xuyên,thông thường"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="frequent,normal,usual"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* thường xuyên / thông thường</p>
+        <p>= <span class="speak-word" onclick="speak('frequent')">frequent 🔊</span> / <span class="speak-word" onclick="speak('normal')">normal 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Span (v)</b><span class="speaker" onclick="speak('Span')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="kéo dài"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="extend"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* kéo dài</p>
+        <p>= <span class="speak-word" onclick="speak('extend')">extend 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Conduct (v)</b><span class="speaker" onclick="speak('Conduct')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="tiến hành"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="carry out,implement,perform,execute,administer"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* tiến hành</p>
+        <p>= <span class="speak-word" onclick="speak('carry out')">carry out 🔊</span> / <span class="speak-word" onclick="speak('implement')">implement 🔊</span> / <span class="speak-word" onclick="speak('perform')">perform 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Specify (v)</b><span class="speaker" onclick="speak('Specify')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="ghi rõ,định rõ"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* ghi rõ / định rõ</p></div>
+</div>
+
+<h2>Dịch câu hỏi (186-190)</h2>
+<div class="section">
+    <p>
+        186. What does the first e-mail mention about Calacad?<br>
+        (A) It has acquired new capabilities.<br>
+        (B) It was developed specifically for the company.<br>
+        (C) It can be downloaded from the employee Web site.<br>
+        (D) It is the subject of regular trainings.<br>
+        <br>
+        187. What is NOT true about the schedule for Skeddit training?<br>
+        (A) It includes both morning and afternoon sessions.<br>
+        (B) It spans a period of more than one month.<br>
+        (C) All of the sessions will be held in the same location.<br>
+        (D) The person who will conduct the training is not specified.<br>
+        <br>
+        188. Why did Ms. Chang write to Mr. Buckley?<br>
+        (A) To ask for confirmation of a registration<br>
+        (B) To request advice about a scheduling difficulty<br>
+        (C) To inform him of a change to her vacation plans<br>
+        (D) To express concern about some technology<br>
+        <br>
+        189. What is suggested about Ms. Chang?<br>
+        (A) She travels frequently for work.<br>
+        (B) She fulfilled a training requirement.<br>
+        (C) She is a member of the engineering department.<br>
+        (D) She is glad that a software program will be replaced.<br>
+        <br>
+        190. On what date will Ms. Chang most likely undergo some training?<br>
+        (A) May 26<br>
+        (B) June 1<br>
+        (C) June 7<br>
+        (D) June 12
+    </p>
+
+    <textarea id="bInput_186" rows="10" placeholder="Nhập bản dịch của bạn..."></textarea>
+
+    <div class="buttons">
+        <button class="btn-answer" onclick="showSpecific('bAnswer_186')">Đáp án</button>
+        <button class="btn-done" onclick="checkSpecific('bInput_186', 'bResult_186')">Hoàn thành</button>
+    </div>
+
+    <div class="answer-box" id="bAnswer_186">
+        <p><b>Dịch tham khảo:</b></p>
+        <p>
+        186. Email đầu tiên đề cập gì về Calacad?<br>
+        A: Nó đã có được những khả năng mới<br>
+        B: Nó đã được phát triển cụ thể cho công ty<br>
+        C: Nó có thể được tải xuống từ trang Web nhân viên<br>
+        D: Nó là chủ đề của những buổi đào tạo thường xuyên<br>
+        <br>
+        187. Điều gì không đúng về lịch trình cho những buổi đào tạo Skeddit?<br>
+        A: Nó bao gồm cả buổi sáng và chiều<br>
+        B: Nó kéo dài qua hơn một tháng<br>
+        C: Tất cả những buổi sẽ được tổ chức ở cùng một địa điểm<br>
+        D: Người tiến hành buổi đào tạo chưa được công bố<br>
+        <br>
+        188. Tại sao cô Chang viết thư cho ông Buckley?<br>
+        A: Để yêu cầu xác nhận đăng ký<br>
+        B: Để yêu cầu lời khuyên về việc khó khăn trong lịch trình<br>
+        C: Để thông báo cho ông ấy thay đổi kế hoạch nghỉ phép của cô ấy<br>
+        D: Để bày tỏ lo lắng về một vài công nghệ<br>
+        <br>
+        189. Cái gì được đề xuất về cô Chang?<br>
+        A: Cô ấy thường xuyên đi công tác<br>
+        B: Cô ấy đã thực hiện một yêu cầu đào tạo<br>
+        C: Cô ấy là một nhân viên của phòng kỹ thuật<br>
+        D: Cô ấy vui là một chương trình phần mềm sẽ được thay thế<br>
+        <br>
+        190. Cô Chang sẽ trải qua buổi huấn luyện vào ngày nào?
+        </p>
+    </div>
+    <p id="bResult_186"></p>
+</div>
+
+<div class="section">
+    <p><b>Inform (v)</b><span class="speaker" onclick="speak('Inform')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="thông báo"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="notify"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* thông báo</p>
+        <p>= <span class="speak-word" onclick="speak('notify')">notify 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Concern (n)</b><span class="speaker" onclick="speak('Concern')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="lo lắng"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="worry"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* lo lắng</p>
+        <p>= <span class="speak-word" onclick="speak('worry')">worry 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Undergo (v)</b><span class="speaker" onclick="speak('Undergo')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="trải qua,trải nghiệm"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="experience"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* trải qua / trải nghiệm</p>
+        <p>= <span class="speak-word" onclick="speak('experience')">experience 🔊</span></p>
+    </div>
+</div>
+
+<hr class="big-divider">
+
+<h2>191-195: E-mail, Schedule, Notice</h2>
+
+<div class="section">
+    <p>
+        <b>E-Mail</b><br>
+        To: shinju.kaneko@zipmail.com<br>
+        From: s.armstrong@oknet.com<br>
+        Date: October 14<br>
+        Subject: RE: Visit<br>
+        <br>
+        Dear Ms. Kaneko,<br>
+        My family would be delighted to welcome you into 195 Strickland Boulevard. We are indeed quite proud to live in one of the few residences designed by Basma Itani. It would be a pleasure to share our home's unique beauty with others through the photographs in your book.<br>
+        <br>
+        It is easy to reach 195 Strickland Boulevard by public transportation from Harrington Airport. You simply take either Bus 412 or Bus 462 and get off at the final stop. The house is about one block back in the direction the bus came from. In fact, you are quite likely to see it from the window shortly before arriving. If you have any problems finding it, you can call me at 555-0185.<br>
+        I look forward to meeting you next week.<br>
+        <br>
+        Best,<br>
+        Shane Armstrong<br>
+        <br>
+        <b>HARRINGTON AIRPORT BUSES NOTICE</b><br>
+        Today (October 19), the airport bus to Edgewood will stop on Bishop Street instead of Yeager Avenue. This change is necessary because of road closures for the Fall Festival. For details, visit the tourism desk.<br>
+        All bus passengers should be advised that, as always, your baggage cannot be placed on a seat unless you have bought the ticket for that specific seat. Otherwise, the baggage must be stored underneath the bus. The bus driver will help you load and unload it safely.
+    </p>
+
+    <textarea id="aInput_191" rows="10" placeholder="Nhập bản dịch của bạn..."></textarea>
+
+    <div class="buttons">
+        <button class="btn-answer" onclick="showSpecific('aAnswer_191')">Đáp án</button>
+        <button class="btn-done" onclick="checkSpecific('aInput_191', 'aResult_191')">Hoàn thành</button>
+    </div>
+
+    <div class="answer-box" id="aAnswer_191">
+        <p><b>Dịch tham khảo:</b></p>
+        <p>
+        <b>[EMAIL]</b><br>
+        Kính gửi cô Kaneko,<br>
+        Gia đình của tôi rất vui chào đón bạn đến căn nhà số 195 đại lộ Strickland. Thật sự chúng tôi khá tự hào được sống trong một số ít những căn nhà được thiết kế bởi Basma Itani. Nó sẽ là niềm vinh dự để chia sẻ vẻ đẹp độc đáo của căn nhà với những người khác thông qua những bức ảnh trong quyển sách của bà.<br>
+        Nó thì rất dễ để tới căn nhà số 195 đại lộ Strickland bằng phương tiện công cộng từ sân bay Harrington. Bạn chỉ cần đi hoặc xe bus số 412 hoặc 462 và xuống ở trạm cuối cùng. Căn nhà thì khoảng một dãy từ hướng xe bus đi đến. Thật ra bạn tương đối có thể thấy được nó từ cửa sổ không lâu trước khi đến. Nếu bạn có bất kỳ vấn đề nào trong việc tìm nhà, bạn có thể gọi tôi vào số 555-0185.<br>
+        Tôi mong đợi gặp bạn tuần sau.<br>
+        Thân,<br>
+        Shane Armstrong<br>
+        <br>
+        <b>[THÔNG BÁO XE BUS SÂN BAY HARRINGTON]</b><br>
+        Hôm nay (19/10), xe bus sân bay tới Edgewood sẽ dừng ở đường Bishop thay vì đại lộ Yeager. Thay đổi này là cần thiết bởi vì việc phong tỏa đường cho lễ hội mùa thu. Để biết chi tiết, hãy đến quầy du lịch.<br>
+        Tất cả những hành khách nên được thông báo rằng như thường lệ hành lý của bạn không thể đặt ở chỗ ngồi trừ khi bạn mua vé cho chỗ ngồi cụ thể đó. Nếu không hành lý cần phải được để ở dưới xe bus. Tài xế sẽ giúp bạn chất và dỡ hành lý một cách an toàn.
+        </p>
+    </div>
+    <p id="aResult_191"></p>
+</div>
+
+<div class="vocab-header">Từ vựng đoạn 191-195</div>
+
+<div class="section">
+    <p><b>Delighted (adj)</b><span class="speaker" onclick="speak('Delighted')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="vui"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="glad,happy,joyful,cheerful"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* vui</p>
+        <p>= <span class="speak-word" onclick="speak('glad')">glad 🔊</span> / <span class="speak-word" onclick="speak('happy')">happy 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Indeed (adv)</b><span class="speaker" onclick="speak('Indeed')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="thực ra"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="in fact"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* thực ra</p>
+        <p>= <span class="speak-word" onclick="speak('in fact')">in fact 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Quite (adv)</b><span class="speaker" onclick="speak('Quite')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="khá,tương đối"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="fairly,pretty,rather,relatively,comparatively"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* khá / tương đối</p>
+        <p>= <span class="speak-word" onclick="speak('fairly')">fairly 🔊</span> / <span class="speak-word" onclick="speak('pretty')">pretty 🔊</span> / <span class="speak-word" onclick="speak('rather')">rather 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Residence (n)</b><span class="speaker" onclick="speak('Residence')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="nhà"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="house"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* nhà</p>
+        <p>= <span class="speak-word" onclick="speak('house')">house 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Simply (adv)</b><span class="speaker" onclick="speak('Simply')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="đơn giản,chỉ cần"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="just"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* đơn giản / chỉ cần</p>
+        <p>= <span class="speak-word" onclick="speak('just')">just 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Be advised that</b><span class="speaker" onclick="speak('Be advised that')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="thông báo rằng"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="be notified that,be informed that"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* thông báo rằng</p>
+        <p>= <span class="speak-word" onclick="speak('be notified that')">be notified that 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Place (v)</b><span class="speaker" onclick="speak('Place')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="đặt,để"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="put,station,position"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* đặt / để</p>
+        <p>= <span class="speak-word" onclick="speak('put')">put 🔊</span> / <span class="speak-word" onclick="speak('station')">station 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Underneath (prep)</b><span class="speaker" onclick="speak('Underneath')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="phía dưới"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="beneath"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* phía dưới</p>
+        <p>= <span class="speak-word" onclick="speak('beneath')">beneath 🔊</span></p>
+    </div>
+</div>
+
+<h2>Dịch câu hỏi (191-195)</h2>
+<div class="section">
+    <p>
+        191. Why most likely is Ms. Kaneko traveling to Mr. Armstrong's area?<br>
+        (A) To attend a design exhibition<br>
+        (B) To take pictures of a property<br>
+        (C) To conduct an interview for a publication<br>
+        (D) To advise him on a renovation project<br>
+        <br>
+        192. In his e-mail, what information does Mr. Armstrong indicate that Ms. Kaneko is already aware of?<br>
+        (A) The composition of his family<br>
+        (B) The architect of his house<br>
+        (C) The location of his workplace<br>
+        (D) The results of a building inspection<br>
+        <br>
+        193. In what neighborhood is 195 Strickland Boulevard located?<br>
+        (A) Downtown<br>
+        (B) Belmont<br>
+        (C) Abbott Heights<br>
+        (D) Edgewood<br>
+        <br>
+        194. Which bus's route has temporarily changed?<br>
+        (A) 410<br>
+        (B) 437<br>
+        (C) 450<br>
+        (D) 470<br>
+        <br>
+        195. What does the notice indicate about Harrington Airport buses?<br>
+        (A) They have assigned seating.<br>
+        (B) Tickets can be bought from their drivers.<br>
+        (C) They have overhead baggage compartments.<br>
+        (D) Their passengers may have to stand during the ride
+    </p>
+
+    <textarea id="bInput_191" rows="10" placeholder="Nhập bản dịch của bạn..."></textarea>
+
+    <div class="buttons">
+        <button class="btn-answer" onclick="showSpecific('bAnswer_191')">Đáp án</button>
+        <button class="btn-done" onclick="checkSpecific('bInput_191', 'bResult_191')">Hoàn thành</button>
+    </div>
+
+    <div class="answer-box" id="bAnswer_191">
+        <p><b>Dịch tham khảo:</b></p>
+        <p>
+        191. Tại sao cô Kaneko lại đi tới khu vực của ông Armstrong?<br>
+        A: Để tham gia một buổi triển lãm thiết kế<br>
+        B: Để chụp một bức ảnh bất động sản<br>
+        C: Để tiến hành phỏng vấn một ấn phẩm<br>
+        D: Để tư vấn cho ông ấy về một dự án nâng cấp<br>
+        <br>
+        192. Trong e-mail của anh ấy, thông tin nào mà ông Armstrong chỉ ra rằng bà Kaneko đã biết rồi?<br>
+        A: Thành phần của gia đình ông ấy<br>
+        B: Kiến trúc sư của căn nhà<br>
+        C: Địa điểm của nơi làm việc<br>
+        D: Kết quả của một việc thanh tra tòa nhà<br>
+        <br>
+        193. Số 195 đại lộ Strickland được tọa lạc ở khu vực nào?<br>
+        A: Trung tâm<br>
+        B: Belmont<br>
+        C: Abbott Heights<br>
+        D: Edgewood<br>
+        <br>
+        194. Tuyến xe bus nào sẽ được tạm thời thay đổi?<br>
+        <br>
+        195. Thông báo chỉ ra cái gì về những chiếc xe bus sân bay Harrington?<br>
+        A: Những chiếc xe bus này có ghế ngồi được chỉ định<br>
+        B: Những chiếc vé có thể được mua từ những người lái xe<br>
+        C: Chúng có những khoang để hành lý ở phía trên đầu<br>
+        D: Hành khách của chúng có thể phải đứng trong suốt chuyến đi
+        </p>
+    </div>
+    <p id="bResult_191"></p>
+</div>
+
+<div class="section">
+    <p><b>Exhibition (n)</b><span class="speaker" onclick="speak('Exhibition')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="buổi triển lãm"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="exhibit"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* buổi triển lãm</p><p>= exhibit</p></div>
+</div>
+
+<div class="section">
+    <p><b>Property (n)</b><span class="speaker" onclick="speak('Property')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="bất động sản"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="real estate"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* bất động sản</p><p>= real estate</p></div>
+</div>
+
+<div class="section">
+    <p><b>Renovation (n)</b><span class="speaker" onclick="speak('Renovation')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="sự nâng cấp"></div>
+    <div class="row"><span>=> Renovate (v)</span> <input type="text" class="b-input" data-type="meaning" data-answer="nâng cấp,tu sửa"></div>
+    <hr>
+    <div class="synonym-row"><span>= (v)</span> <input type="text" class="b-input" data-type="synonym" data-answer="upgrade,remodel,improve"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* sự nâng cấp</p>
+        <p>=> Renovate (v): nâng cấp / tu sửa</p>
+        <p>= <span class="speak-word" onclick="speak('upgrade')">upgrade 🔊</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Aware of (adj)</b><span class="speaker" onclick="speak('Aware of')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="quan tâm,biết,nhận thức"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="conscious of"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* quan tâm / biết / nhận thức</p><p>= conscious of</p></div>
+</div>
+
+<div class="section">
+    <p><b>Composition (n)</b><span class="speaker" onclick="speak('Composition')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="cấu tạo,thành phần"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* cấu tạo / thành phần</p></div>
+</div>
+
+<div class="section">
+    <p><b>Inspect (v)</b><span class="speaker" onclick="speak('Inspect')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="kiểm tra,thanh tra"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="examine,scrutinize"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* kiểm tra / thanh tra</p><p>= examine / scrutinize</p></div>
+</div>
+
+<div class="section">
+    <p><b>Neighborhood (n)</b><span class="speaker" onclick="speak('Neighborhood')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="khu vực"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="area,region"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* khu vực</p><p>= area / region</p></div>
+</div>
+
+<div class="section">
+    <p><b>Temporary (adj)</b><span class="speaker" onclick="speak('Temporary')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="tạm thời"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="interim,tentative"></div>
+    <div class="synonym-row"><span># Trái nghĩa</span> <input type="text" class="b-input" data-type="synonym" data-answer="permanent"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* tạm thời</p>
+        <p>= interim / tentative</p>
+        <p># permanent (cố định / lâu dài)</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Assign (v)</b><span class="speaker" onclick="speak('Assign')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="phân công,chỉ định"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="designate"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* phân công / chỉ định</p><p>= designate</p></div>
+</div>
+
+<hr class="big-divider">
+
+<h2>196-200: Article, E-mail & Plan</h2>
+
+<div class="section">
+    <p>
+        <b>Clemente Street Lot</b><br>
+        HAYWARD (March 2)-The Hayward City Council is exploring various options for the future of a 5-acre city-owned lot located on Clemente Street. Bids and proposals are being accepted at this time, with the Greenway Collaborative, a local environmental group, advocating for leaving the lot empty and in the city's possession.<br>
+        <br>
+        Hillview Property Development is interested in purchasing the lot. It intends to build Marshall Plaza, a small building with space for retail business, and establish a courtyard and a small green area with trees, benches, and flower gardens that would be designated for public use.<br>
+        <br>
+        "Our planned combination of retail units and green space is a viable solution for this neighborhood, which is in critical need of revitalization," said Luoyang Meng, a Hillview Property Development representative. "Our company has the resources to create an attractive and thriving retail center as well as the expertise to minimize disruptions to wildlife habitats. We hope to have the opportunity to showcase our skills."<br>
+        <br>
+        <b>[E-Mail message]</b><br>
+        From: Clifford Mullen clifford@busybeebakery.com<br>
+        To: Racquel Shaw r_shaw@hillviewprop.com<br>
+        Date: November 18<br>
+        Subject: Rental inquiry<br>
+        <br>
+        Dear Ms. Shaw,<br>
+        I own the Busy Bee Bakery downtown, and I am interested in renting a second location to sell my baked goods. Marshall Plaza would be ideal for my business because of the anticipated foot traffic. I am also drawn to the convenience of the easy access to public transportation and the unloading area in the back. I need at least three hundred square meters of space, but I do not want cooking facilities, as our staff will bake at our main site and just deliver the goods to the secondary site. I'm also wondering if you could tell me the average rates for water, electricity, and gas. I know that these are not included in the monthly rental fee.<br>
+        <br>
+        Thanks for the information,<br>
+        Clifford Mullen
+    </p>
+
+    <textarea id="aInput_196" rows="10" placeholder="Nhập bản dịch của bạn..."></textarea>
+
+    <div class="buttons">
+        <button class="btn-answer" onclick="showSpecific('aAnswer_196')">Đáp án</button>
+        <button class="btn-done" onclick="checkSpecific('aInput_196', 'aResult_196')">Hoàn thành</button>
+    </div>
+
+    <div class="answer-box" id="aAnswer_196">
+        <p><b>Dịch tham khảo:</b></p>
+        <p>
+        <b>Clemente Street Lot</b><br>
+        HAYWARD (2-3)- Hội đồng thành phố Hayward đang khám phá nhiều lựa chọn cho tương lai của lô đất do thành phố sở hữu tọa lạc trên đường Clemente. Những cái gói thầu và đề xuất đang được chấp thuận thời điểm này, cùng với Greenway Collaborative, một tổ chức môi trường địa phương, ủng hộ việc để lô đất này trống và thuộc quyền sở hữu của thành phố.<br>
+        <br>
+        Công ty phát triển bất động sản Hillview thì hứng thú trong việc mua lại lô đất này. Công ty dự định xây khu thương mại Marshall, một tòa nhà nhỏ với không gian cho doanh nghiệp bán lẻ, và thành lập một khoảng sân với những cái cây, ghế đá và những vườn hoa mà có thể được chỉ định với mục đích sử dụng công cộng.<br>
+        <br>
+        “Sự kết hợp dự kiến của chúng tôi cả đơn vị bán lẻ và không gian xanh là một giải pháp khả thi cho khu vực này, mà đang rất cần sự trùng tu", Meng Luoyang nói, một người đại diện của công ty bất động sản Hillview. "Công ty của chúng tôi có những tài nguyên để tạo ra một trung tâm bán lẻ thu hút và phát triển như là sự chuyên môn để giảm sự quấy rầy đến môi trường sống hoang dã. Chúng tôi hi vọng có cơ hội để thể hiện kỹ năng của chúng tôi.<br>
+        <br>
+        <b>Email</b><br>
+        Kính gửi cô Shaw,<br>
+        Tôi sở hữu tiệm bánh Busy Bee ở trung tâm thành phố, và tôi cảm thấy thú vị trong việc thuê địa điểm thứ hai để bán các loại bánh nướng. Trung tâm thương mại Marshall sẽ lí tưởng cho doanh nghiệp của tôi bởi vì lưu lượng khách hàng dự kiến. Tôi cũng được thu hút bởi sự tiện lợi của việc tiếp cận dễ dàng tới phương tiện công cộng và khu vực dỡ hàng ở phía sau. Tôi cần ít nhất ba trăm mét vuông không gian, nhưng tôi không muốn những cơ sở nấu nướng, vì nhân viên của chúng tôi sẽ nướng ở những địa điểm chính và chỉ giao những mặt hàng tới những địa điểm thứ hai. Tôi cũng tự hỏi nếu bạn cho tôi biết giá cả trung bình của nước, điện và gas. Tôi biết rằng chúng không bao gồm trong chi phí thuê hàng tháng.
+        </p>
+    </div>
+    <p id="aResult_196"></p>
+</div>
+
+<div class="vocab-header">Từ vựng đoạn 196-200</div>
+
+<div class="section">
+    <p><b>Council (n)</b><span class="speaker" onclick="speak('Council')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="hội đồng"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="board,panel"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* hội đồng</p><p>= board / panel</p></div>
+</div>
+
+<div class="section">
+    <p><b>Bid (n/v)</b><span class="speaker" onclick="speak('Bid')">🔊</span></p>
+    <div class="row"><span>* (n) Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="gói thầu,giá thầu"></div>
+    <div class="row"><span>=> (v)</span> <input type="text" class="b-input" data-type="meaning" data-answer="đấu thầu"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* gói thầu / giá thầu</p><p>=> bid (v): đấu thầu</p></div>
+</div>
+
+<div class="section">
+    <p><b>Advocate (v)</b><span class="speaker" onclick="speak('Advocate')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="ủng hộ"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="support"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* ủng hộ</p><p>= support</p></div>
+</div>
+
+<div class="section">
+    <p><b>Possession (n)</b><span class="speaker" onclick="speak('Possession')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="sự sở hữu"></div>
+    <div class="row"><span>=> Possess (v)</span> <input type="text" class="b-input" data-type="meaning" data-answer="sở hữu"></div>
+    <hr>
+    <div class="synonym-row"><span>= (v)</span> <input type="text" class="b-input" data-type="synonym" data-answer="own"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* sự sở hữu</p><p>=> possess (v): sở hữu (= own)</p></div>
+</div>
+
+<div class="section">
+    <p><b>Intend (v)</b><span class="speaker" onclick="speak('Intend')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="dự định"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="plan"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* dự định</p><p>= plan</p></div>
+</div>
+
+<div class="section">
+    <p><b>Designate (v)</b><span class="speaker" onclick="speak('Designate')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="chỉ định"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="assign"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* chỉ định</p><p>= assign</p></div>
+</div>
+
+<div class="section">
+    <p><b>Viable (adj)</b><span class="speaker" onclick="speak('Viable')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="khả thi"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="practical"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* khả thi</p><p>= practical</p></div>
+</div>
+
+<div class="section">
+    <p><b>Critical (adj)</b><span class="speaker" onclick="speak('Critical')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="phê bình,quan trọng"></div>
+    <hr>
+    <div class="synonym-row"><span>= (quan trọng)</span> <input type="text" class="b-input" data-type="synonym" data-answer="important,significant,essential,necessary,crucial,vital"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* phê bình / quan trọng</p>
+        <p>= important / significant / essential / necessary / crucial / vital</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Revitalization (n)</b><span class="speaker" onclick="speak('Revitalization')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="sự phục hồi,sự trùng tu"></div>
+    <div class="row"><span>=> Revitalize (v)</span> <input type="text" class="b-input" data-type="meaning" data-answer="phục hồi,trùng tu"></div>
+    <hr>
+    <div class="synonym-row"><span>= (v)</span> <input type="text" class="b-input" data-type="synonym" data-answer="restore"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* sự phục hồi / sự trùng tu</p>
+        <p>= restore</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Thrive (v)</b><span class="speaker" onclick="speak('Thrive')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="phát triển"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="prosper,develop,grow,evolve"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* phát triển</p>
+        <p>= prosper / develop / grow / evolve</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Anticipated (adj)</b><span class="speaker" onclick="speak('Anticipated')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="dự kiến,mong đợi"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="expected"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* dự kiến / mong đợi</p><p>= expected</p></div>
+</div>
+
+<div class="section">
+    <p><b>Draw (v)</b><span class="speaker" onclick="speak('Draw')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="vẽ,thu hút"></div>
+    <hr>
+    <div class="synonym-row"><span>= (thu hút)</span> <input type="text" class="b-input" data-type="synonym" data-answer="attract,appeal to,engage"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* vẽ / thu hút</p>
+        <p>= attract / appeal to / engage</p>
+    </div>
+</div>
+
+<h2>Dịch câu hỏi (196-200)</h2>
+<div class="section">
+    <p>
+        196. What is the purpose of the article?<br>
+        (A) To give an update about public land<br>
+        (B) To notify local residents of a closure<br>
+        (C) To promote the sale of an unused lot<br>
+        (D) To elicit aid for a park upgrade<br>
+        <br>
+        197. What beneficial aspect of Hillview Property Development does Mr. Meng mention?<br>
+        (A) Its intention to create more jobs in the city of Hayward<br>
+        (B) Its experience with keeping building expenditures under control<br>
+        (C) Its use of environmentally friendly construction materials<br>
+        (D) Its ability to preserve spaces where animals live<br>
+        <br>
+        198. What is suggested about Hillview Property Development in Mr. Mullen's e-mail?<br>
+        (A) It constructed the building where his bakery is.<br>
+        (B) It is awaiting the final building permits.<br>
+        (C) Its proposal was accepted by city officials.<br>
+        (D) Its staff usually uses public transportation.<br>
+        <br>
+        199. What information about Marshall Plaza does Mr. Mullen request?<br>
+        (A) The security measures for the building<br>
+        (B) The cost of utilities at a site<br>
+        (C) The due date for monthly fees<br>
+        (D) The size of an unloading area<br>
+        <br>
+        200. Which unit would Mr. Mullen most likely be interested in?<br>
+        (A) Unit 101<br>
+        (B) Unit 102<br>
+        (C) Unit 103<br>
+        (D) Unit 105
+    </p>
+
+    <textarea id="bInput_196" rows="10" placeholder="Nhập bản dịch của bạn..."></textarea>
+
+    <div class="buttons">
+        <button class="btn-answer" onclick="showSpecific('bAnswer_196')">Đáp án</button>
+        <button class="btn-done" onclick="checkSpecific('bInput_196', 'bResult_196')">Hoàn thành</button>
+    </div>
+
+    <div class="answer-box" id="bAnswer_196">
+        <p><b>Dịch tham khảo:</b></p>
+        <p>
+        196. Mục đích của bài báo là gì?<br>
+        A: Để cập nhật một lô đất công<br>
+        B: Để thông báo cho dân địa phương về việc đóng cửa<br>
+        C: Để quảng cáo việc bán một lô đất chưa sử dụng<br>
+        D: Để kêu gọi quyên góp cho việc nâng cấp công viên<br>
+        <br>
+        197. Khía cạnh thuận lợi nào của công ty phát triển bất động sản Hillview được ông Meng đề cập?<br>
+        A: Dự định của nó tạo ra thêm nhiều việc làm trong thành phố Hayward<br>
+        B: Kinh nghiệm của nó trong việc giữ cho kinh phí xây dựng trong tầm kiểm soát<br>
+        C: Việc sử dụng những vật liệu thân thiện với môi trường<br>
+        D: Khả năng bảo tồn không gian nơi mà động vật sống<br>
+        <br>
+        198. Cái gì được đề xuất về công ty bất động sản Hillview trong thư ông Mullen?<br>
+        A: Nó đã xây dựng tòa nhà nơi mà tiệm bánh của anh ấy đang được tọa lạc<br>
+        B: Nó đang chờ đợi giấy phép xây dựng cuối cùng<br>
+        C: Đề xuất đã được chấp nhận bởi những viên chức thành phố<br>
+        D: Nhân viên của nó thường xuyên sử dụng phương tiện công cộng<br>
+        <br>
+        199. Thông tin gì về trung tâm thương mại Marshall mà ông Mullen yêu cầu?<br>
+        A: Những giải pháp bảo vệ tòa nhà<br>
+        B: Giá cả của những tiện ích ở một địa điểm<br>
+        C: Ngày hết hạn của những phí hàng tháng<br>
+        D: Kích thước của khu vực dỡ hàng<br>
+        <br>
+        200. Ông Mullen hứng thú ở khu nào?
+        </p>
+    </div>
+    <p id="bResult_196"></p>
+</div>
+
+<div class="section">
+    <p><b>Notify (v)</b><span class="speaker" onclick="speak('Notify')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="thông báo"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="inform"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* thông báo</p><p>= inform</p></div>
+</div>
+
+<div class="section">
+    <p><b>Elicit (v)</b><span class="speaker" onclick="speak('Elicit')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="đạt được,lấy được"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="obtain"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* đạt được / lấy được</p><p>= obtain</p></div>
+</div>
+
+<div class="section">
+    <p><b>Aid (n)</b><span class="speaker" onclick="speak('Aid')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="sự quyên góp,sự giúp đỡ"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="donation,help,assistance"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* sự quyên góp / sự giúp đỡ</p><p>= donation</p></div>
+</div>
+
+<div class="section">
+    <p><b>Upgrade (n)</b><span class="speaker" onclick="speak('Upgrade')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="nâng cấp,tu sửa"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="improvement,renovation,remodeling"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* nâng cấp / tu sửa</p>
+        <p>= improvement / renovation / remodeling</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Expenditure (n)</b><span class="speaker" onclick="speak('Expenditure')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="chi phí"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="expense"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* chi phí</p><p>= expense</p></div>
+</div>
+
+<div class="section">
+    <p><b>Preserve (v)</b><span class="speaker" onclick="speak('Preserve')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="bảo tồn,bảo vệ"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="protect,conserve"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* bảo tồn / bảo vệ</p><p>= protect / conserve</p></div>
+</div>
+
+<div class="section">
+    <p><b>Construct (v)</b><span class="speaker" onclick="speak('Construct')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="xây dựng"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="build"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* xây dựng</p><p>= build</p></div>
+</div>
+
+<div class="section">
+    <p><b>Await (v)</b><span class="speaker" onclick="speak('Await')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="chờ"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="wait for"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* chờ</p><p>= wait for</p></div>
+</div>
+
+<div class="section">
+    <p><b>Official</b><span class="speaker" onclick="speak('Official')">🔊</span></p>
+    <div class="row"><span>* (n) Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="viên chức"></div>
+    <div class="row"><span>* (adj) Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="chính thức"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* (n) viên chức</p><p>* (adj) chính thức</p></div>
+</div>
+
+<div class="section">
+    <p><b>Measure</b><span class="speaker" onclick="speak('Measure')">🔊</span></p>
+    <div class="row"><span>* (v) Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="đo lường"></div>
+    <div class="row"><span>* (n) Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="biện pháp"></div>
+    <hr>
+    <div class="synonym-row"><span>= (n)</span> <input type="text" class="b-input" data-type="synonym" data-answer="method,approach"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box">
+        <p>* (v) đo lường</p>
+        <p>* (n) biện pháp</p>
+        <p>= method / approach</p>
+    </div>
+</div>
+
+<div class="section">
+    <p><b>Site (n)</b><span class="speaker" onclick="speak('Site')">🔊</span></p>
+    <div class="row"><span>* Nghĩa:</span> <input type="text" class="b-input" data-type="meaning" data-answer="địa điểm"></div>
+    <hr>
+    <div class="synonym-row"><span>=</span> <input type="text" class="b-input" data-type="synonym" data-answer="venue,location,spot"></div>
+    <div class="buttons"><button class="btn-answer" onclick="showAnswer(this)">Đáp án</button><button class="btn-done" onclick="checkAnswer(this)">Hoàn thành</button></div>
+    <div class="answer-box"><p>* địa điểm</p><p>= venue / location / spot</p></div>
+</div>
+
+<script>
+// --- Xử lý phần Dịch (Generic function) ---
+function showSpecific(answerId) {
+    document.getElementById(answerId).style.display = "block";
+}
+
+function checkSpecific(inputId, resultId) {
+    let text = document.getElementById(inputId).value.trim();
+    let result = document.getElementById(resultId);
+
+    if (text.length > 30) {
+        result.innerHTML = "✔ Bài dịch hợp lệ (đã nộp)";
+        result.style.color = "green";
+    } else {
+        result.innerHTML = "✘ Bài dịch quá ngắn, vui lòng nhập đầy đủ";
+        result.style.color = "red";
+    }
+}
+
+// --- Xử lý phần Từ vựng ---
+function showAnswer(btn) {
+    const item = btn.closest(".section"); 
+    const answerBox = item.querySelector(".answer-box");
+    if (answerBox) {
+        answerBox.style.display = "block";
+    }
+}
+
+function checkAnswer(btn) {
+    const item = btn.closest(".section");
+    const inputs = item.querySelectorAll("input[data-answer]");
+
+    inputs.forEach(input => {
+        const correctData = input.dataset.answer.toLowerCase().trim();
+        const value = input.value.toLowerCase().trim();
+
+        // Tách chuỗi đáp án bằng dấu phẩy
+        const possibleAnswers = correctData.split(',').map(s => s.trim());
+
+        if (value !== "" && possibleAnswers.includes(value)) {
+            input.classList.add("correct");
+            input.classList.remove("wrong");
+        } else {
+            input.classList.add("wrong");
+            input.classList.remove("correct");
+        }
+    });
+}
+
+// --- Xử lý phát âm (Đã fix lỗi loa) ---
+function speak(word) {
+    // Hủy các lệnh đọc trước đó để tránh bị kẹt hàng đợi
+    window.speechSynthesis.cancel();
+
+    let utterance = new SpeechSynthesisUtterance(word);
+    
+    // Cố gắng tìm giọng tiếng Anh Mỹ
+    let voices = window.speechSynthesis.getVoices();
+    let selectedVoice = voices.find(v => v.lang === 'en-US');
+    if (selectedVoice) {
+        utterance.voice = selectedVoice;
+    }
+
+    utterance.lang = "en-US";
+    utterance.rate = 0.9; 
+    
+    window.speechSynthesis.speak(utterance);
+}
+</script>
+
+</body>
+</html>
